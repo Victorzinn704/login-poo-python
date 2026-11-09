@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "login-poo-python"
+version = "1.0.0"
+description = "Login POO didático com portas, adaptadores e testes"
+requires-python = ">=3.10"
+dependencies = []
+[project.scripts]
+login-poo = "login_poo.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
